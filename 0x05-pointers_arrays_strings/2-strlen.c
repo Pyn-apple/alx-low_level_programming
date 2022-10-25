@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  *_strlen - returns the len of star
  *@s : string

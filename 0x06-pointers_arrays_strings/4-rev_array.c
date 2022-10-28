@@ -1,20 +1,21 @@
 #include "main.h"
 
 /**
- *string_toupper - changes lowercase to uppercase
- * @n: pointr
- * Return: char
+ * reverse_array - reverse an arrayy of integers
+ * @a: array
+ * @n: number of elements in the array
+ * Return: rev
  */
-char *string_toupper(char *n)
+void reverse_array(int *a, int n)
 {
 	int i;
+	int j;
 
-	i = 0;
-	while (n[i] != '\0')
+	for (i = 0; i < n; i++)
 	{
-		if (n[i] >= 'a' && n[i] <= 'z')
-			n[i] = n[i] - 32;
-		i++;
+		n--;
+		j = a[i];
+		a[i] = a[n];
+		a[n] = j;
 	}
-	return (n);
 }

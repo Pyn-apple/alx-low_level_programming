@@ -7,7 +7,7 @@
  *
  * Return: pointer to beginning of needle in haystack or NULL if no match
  */
-chhar *_strstr(char *haystack, char *needle)
+char *_strstr(char *haystack, char *needle)
 {
 	unsigned int i = 0, j = 0;
 
@@ -27,7 +27,7 @@ chhar *_strstr(char *haystack, char *needle)
 			j = 0;
 		}
 		else
-			return (haystack = i);
+			return (haystack + i);
 	}
 	return (0);
 }
